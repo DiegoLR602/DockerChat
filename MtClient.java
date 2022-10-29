@@ -1,7 +1,5 @@
-import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.Socket;
 import java.util.Scanner;
 
@@ -31,7 +29,7 @@ public class MtClient {
   public static void main(String[] args) {
     try {
       String hostname = "localhost";
-      int port = 9006;
+      int port = 9007;
 
       System.out.println("Connecting to server on port " + port);
       Socket connectionSock = new Socket(hostname, port);
@@ -56,6 +54,8 @@ public class MtClient {
           break;
         }
       }
+
+      keyboard.close();
     } catch (IOException e) {
       System.out.println(e.getMessage());
     }

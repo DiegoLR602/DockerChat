@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -40,8 +37,8 @@ public class MtServer {
   private void getConnection() {
     // Wait for a connection from the client
     try {
-      System.out.println("Waiting for client connections on port 9006.");
-      ServerSocket serverSock = new ServerSocket(9006);
+      System.out.println("Waiting for client connections on port 9007.");
+      ServerSocket serverSock = new ServerSocket(9007);
       // This is an infinite loop, the user will have to shut it down
       // using control-c
       while (true) {
@@ -56,9 +53,6 @@ public class MtServer {
         Thread theThread = new Thread(handler);
         theThread.start();
       }
-      // Will never get here, but if the above loop is given
-      // an exit condition then we'll go ahead and close the socket
-      //serverSock.close();
     } catch (IOException e) {
       System.out.println(e.getMessage());
     }

@@ -67,7 +67,7 @@ This repo contains programs to implement a multi-threaded TCP chat server and cl
 
 ## Game Instructions:
 
-* The first client to enter "host" will be the host of the game:
+* The first client to name themselves "host" will be the host of the game:
 * The host will send True/False questions to the other clients and whoever answers first is awarded points.
   * The host awards points manually with the command "AWARD"
 * The host can use the command "SCORES" to send a message with the scores of each client will be sent to all the clients.
