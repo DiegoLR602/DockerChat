@@ -1,20 +1,3 @@
-/*
-Name: Ariel Gutierrez
-Student ID: 2318163
-Email: arigutierrez@chapman.edu
-
-Name: Diego Lopez
-Student ID: 2378206
-Email: lopezramos@chapman.edu
-
-Name: Joan Karstrom
-Student ID: 2318286
-Email: Karstrom@chapman.edu
-
-Course: CPSC - 353
-Assignment: PA04 - Chat
-*/
-
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
